@@ -12,6 +12,7 @@ function getProduct () {
         .then(data => {
 
             data.products.map(product => {
+                console.log(data.products)
                 main.innerHTML += `
                      <div class="box">
                          <img class="photo2" src="${product.thumbnail}" alt="">
